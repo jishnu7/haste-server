@@ -2,6 +2,7 @@ body {
 	background: #002B36;
 	padding: 0;
 	margin: 0;
+	width: 100%;
 }
 
 #wrapper {
@@ -54,10 +55,10 @@ textarea {
 	word-break: break-all;
 	-ms-word-break: break-all;
 	/* Chrome*/
-    word-break: break-word;
+	word-break: break-word;
 	hyphens: auto;
 	-webkit-hyphens: auto;
-   	-moz-hyphens: auto;
+	-moz-hyphens: auto;
 }
 
 /* key */
@@ -193,4 +194,32 @@ textarea {
 
 #messages li.error {
 	background:rgba(102,8,0,0.8);
+}
+
+
+@media screen and (max-width: 600px) {
+	body {
+		text-align: center;
+	}
+
+	#key {
+		height: 110px;
+	}
+
+	#box1 {
+		margin: 0px auto;
+		float: none;
+	}
+	#box2 {
+		clear: both;
+		margin: 0px auto;
+	}
+
+	#box3 {
+		padding: 0px;
+	}
+
+	#box3 .label, #messages li {
+		float: none;
+	}
 }
