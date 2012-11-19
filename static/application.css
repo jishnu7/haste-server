@@ -219,6 +219,14 @@ textarea {
 		padding: 0px;
 	}
 
+	#wrapper {
+		text-align: left;
+	}
+
+	#messages {
+		text-align: center;
+	}
+
 	#box3 .label, #messages li {
 		float: none;
 	}
