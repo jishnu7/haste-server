@@ -52,10 +52,13 @@ textarea {
 #box code {
 	padding: 0px;
 	background: transparent !important; /* don't hide hastebox */
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
 	word-break: break-all;
 	-ms-word-break: break-all;
-	/* Chrome*/
-	word-break: break-word;
+	word-break: break-word; /* Chrome*/
 	hyphens: auto;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
