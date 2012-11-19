@@ -1,9 +1,13 @@
 body {
 	background: #002B36;
-	padding: 20px 50px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 }
 
+#wrapper {
+	padding: 20px 50px;
+	position: relative;
+}
 /* textarea */
 
 textarea {
@@ -59,16 +63,22 @@ textarea {
 /* key */
 
 #key {
-	position: fixed;
-	top: 0px;
-	right: 0px;
-	z-index: +1000; /* watch out */
+	height: 52px;
 }
 
 #box1 {
 	padding: 5px;
 	text-align: center;
 	background: #00222b;
+	float: left;
+	margin-left: 15px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	height: 52px;
 }
 
 #box2 {
@@ -122,12 +132,23 @@ textarea {
 	font-family: Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 14px;
+}
+
+#messages li {
 	padding: 10px 15px;
+}
+
+#box3 {
+	padding-left: 157px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #box3 .label, #messages li {
 	color: #fff;
 	font-weight: bold;
+	float: left;
+	margin-right: 5px;
 }
 
 #box3 .shortcut {
